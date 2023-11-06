@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Selection</title>
+</head>
+<body>
+    <h1>Choose an Activity</h1>
+
+    <!-- Dropdown for selecting activity categories -->
+    <select id="categoryDropdown">
+        <option value="Select one" selected>Select one</option>
+
+        <!-- adding selected items -->
+    </select>
+
+    <!-- Dropdown for displaying activity names based on selected category -->
+    <select id="activityDropdown">
+        <option value="Select one" selected>Select one</option>
+        <!-- adding selected items -->
+    </select>
+
+    <!-- Display details of the selected activity -->
+    <div id="activityDetails">
+        <h2>Activity Details</h2>
+        <p><strong>ID:</strong> <span id="activityId"></span></p>
+        <p><strong>Name:</strong> <span id="activityName"></span></p>
+        <p><strong>Description:</strong> <span id="activityDescription"></span></p>
+        <p><strong>Location:</strong> <span id="activityLocation"></span></p>
+        <p><strong>Price:</strong> $<span id="activityPrice"></span></p>
+    </div>
+
+    <!-- Form for buying an e-ticket  -->
+    <form id="ticketPurchaseForm">
+        <h2>Purchase E-Ticket</h2>
+        <label for="ticketQuantity">Number of Tickets:</label>
+        <input type="number" id="ticketQuantity" name="ticketQuantity" required>
+        <br>
+        <label for="creditCard">Credit Card Number:</label>
+        <input type="text" id="creditCard" name="creditCard" required>
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Purchase</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- Message for successful purchase (displayed after form submission) -->
+    <p id="purchaseMessage"></p>
+    <script src="scripts/activities.js"> </script>
+    <script src="scripts/script.js">
+       
+    </script>
+
+</body>
+</html>
